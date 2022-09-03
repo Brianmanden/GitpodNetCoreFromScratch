@@ -1,14 +1,9 @@
-image: gitpod/workspace-dotnet
-
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: Restore & Build
-    init: |
-      echo 'Virker ?'
-      dotnet --version
-      # dotnet dev-certs https 
-      # dotnet restore
-      # dotnet build
+  - init: echo 'init script' # runs during prebuild
+    command: echo 'start script'
 
-# vscode:
-  # extensions:
-    # - muhammad-sammy.csharp
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
