@@ -1,10 +1,6 @@
 image: gitpod/workspace-dotnet
 
 tasks:
-  - name: Init Script
-    init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
-
   - name: Restore & Build
     init: |
       dotnet --version
