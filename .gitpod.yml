@@ -8,10 +8,6 @@ tasks:
       dotnet restore
       dotnet build
 
-  - name: BJAtest
-    init: echo 'virker ?'
-    openMode: split-right
-
 vscode:
   extensions:
     - muhammad-sammy.csharp
