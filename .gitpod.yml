@@ -1,9 +1,13 @@
-# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
-tasks:
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
+image: gitpod/workspace-dotnet
 
-# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
-ports:
-  - port: 3000
-    onOpen: open-preview
+tasks:
+  - name: Restore & Build
+    init: echo 'init script'
+      # dotnet --version
+      # dotnet dev-certs https 
+      # dotnet restore
+      # dotnet build
+
+# vscode:
+  # extensions:
+    # - muhammad-sammy.csharp
