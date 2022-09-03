@@ -5,10 +5,10 @@ tasks:
     init: |
       echo 'Virker ?'
       dotnet --version
-      dotnet dev-certs https 
-      dotnet restore
-      dotnet build
+      # dotnet dev-certs https 
+      # dotnet restore
+      # dotnet build
 
-vscode:
-  extensions:
-   - muhammad-sammy.csharp
+# vscode:
+  # extensions:
+    # - muhammad-sammy.csharp
